@@ -137,19 +137,19 @@ resource "aws_dynamodb_table" "OrderDB" {
 
 ###############################zippen#######################################
 
-data "archive_file" "lambda1_code" {
+data "archive_file" "order" {
   type        = "zip"
   source_file = "./python/orderlambda.py"  # Pfad zur source
   output_path = "./python/orderlambda.zip" # Pfad, wohin das ZIP-Archiv erstellt werden soll
 }
 
-data "archive_file" "lambda2_code" {
+data "archive_file" "index" {
   type        = "zip"
   source_file = "./getdriver/index.py"  # Pfad zur source
   output_path = "./getdriver/index.zip" # Pfad, wohin das ZIP-Archiv erstellt werden soll
 }
 
-data "archive_file" "lambda3_code" {
+data "archive_file" "driver" {
   type        = "zip"
   source_file = "./driver/driver.py"  # Pfad zur source
   output_path = "./driver/driver.zip" # Pfad, wohin das ZIP-Archiv erstellt werden soll
