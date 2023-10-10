@@ -154,5 +154,3 @@ data "archive_file" "lambda3_code" {
   source_file = "./driver/driver.py"  # Pfad zur source
   output_path = "./driver/driver.zip" # Pfad, wohin das ZIP-Archiv erstellt werden soll
 }
-
-#test
