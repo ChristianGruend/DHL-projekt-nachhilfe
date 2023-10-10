@@ -16,7 +16,7 @@ def lambda_handler(event, context):  # Definiert eine Funktion namens "lambda_ha
             "driverID": {"S": driver_id},  # Fügt die Fahrer-ID als String hinzu.
             "Name": {"S": driver_name},  # Fügt den Fahrernamen als String hinzu.
             "Verfügbarkeit": {"S": availability},  # Fügt die Verfügbarkeit als String hinzu.
-            "Email": {"S": "emailadresse"}  # Fügt eine Dummy-E-Mail-Adresse als String hinzu.
+            "Email": {"S": "christian.gruender@docc.techstarter.de"}  # Fügt eine Dummy-E-Mail-Adresse als String hinzu.
         }
 
         try:  # Startet einen Try-Block, um Fehler beim Einfügen des Datensatzes in die DynamoDB-Tabelle abzufangen.
